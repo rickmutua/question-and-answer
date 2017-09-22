@@ -1,12 +1,12 @@
 {
-  "name": "Question and Answer Message Board",
-  "description": "platform where a user can ask questions and receive answers from other users",
-  "main": "",
+  "name": "a",
+  "description": "Small description for a goes here",
+  "main": ".eslintrc.js",
   "authors": [
     "Erick <rick.mutua12@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/rickmutua/Q&A",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3",
-    "ember-addons.bs_for_ember": "~0.7.0"
+    "firebase": "^4.4.0",
+    "package": "^0.1.2"
   }
 }
