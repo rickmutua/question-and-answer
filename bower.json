@@ -1,0 +1,21 @@
+{
+  "name": "Question and Answer Message Board",
+  "description": "platform where a user can ask questions and receive answers from other users",
+  "main": "",
+  "authors": [
+    "Erick <rick.mutua12@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rickmutua/Q&A",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3",
+    "ember-addons.bs_for_ember": "~0.7.0"
+  }
+}
