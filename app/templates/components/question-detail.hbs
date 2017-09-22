@@ -1,1 +1,13 @@
-{{yield}}
+{{question.author}} <br>
+
+{{question.question}}
+
+
+
+<h3> ANSWERS</h3>
+
+<ul>
+  {{#each rental.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>

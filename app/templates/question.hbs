@@ -1,1 +1,7 @@
-{{outlet}}
+<h3>{{model.author}} <br> {{model.question}} </h3>
+
+  {{update-question question=model update="update"}}
+
+  {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+
+  {{new-answer saveAnswer="saveAnswer" question=model}}
