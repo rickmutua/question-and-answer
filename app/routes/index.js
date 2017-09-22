@@ -12,7 +12,7 @@ export default Ember.Route.extend({
     saveQUestion2(params) {
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
-      this.transitionTo('index';)
+      this.transitionTo('index');
     },
   }
 });
