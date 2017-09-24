@@ -4,13 +4,15 @@
 
   <li>
 
-  {{#link-to 'question' question.id}}
+      Posted by {{#link-to 'user' user.id}} {{question.author}} {{/link-to}} {{moment-from-now (now interval=1000)}} <br>
 
-      Posted by {{question.author}} {{moment-from-now (now interval=1000)}} <br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_CUWBZf31COd9NVO4dUoq3kgvdpqf6hUrU6QFdki4hJHtYkX" alt="">
 
-      {{question.question}}
+      {{#link-to 'question' question.id}}
 
-  {{/link-to}}
+        {{question.question}}
+
+      {{/link-to}}
 
   </li>
 

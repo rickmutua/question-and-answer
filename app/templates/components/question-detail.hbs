@@ -1,8 +1,20 @@
 <div class="container">
 
-  {{question.author}} <br>
+<div class="que-detail" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rFU0t0ppwwdVdZQu9mcEaXMwC93SKLo1gc6uqFfvOpISTEE6'); color: white;">
 
-  {{question.question}}
+  <div class="txt">
+    {{question.question}}
+  </div>
+
+  <button id="del" {{action 'delete' question}}> DELETE </button>
+  <button id="ans" {{action 'answerFormShow'}}> ANSWER </button>
+
+
+
+</div>
+
+
+
 
 
 

@@ -9,11 +9,11 @@ export default Ember.Component.extend({
     answerFormShow() {
       this.set('addNewAnswer', true);
     },
-    
+
       saveAnswer() {
         var params = {
           commentor: this.get('commentor'),
-          answer: this.get('content')
+          answer: this.get('answer')
         }
         this.set('addNewAnswer', false);
         this.sendAction('saveAnswer', params);

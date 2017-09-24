@@ -11,8 +11,21 @@ input {
   border-radius: 5px;
 }
 
+textarea {
+  border-radius: 5px;
+}
+
 button {
   border-radius: 5px;
+  background-color: orange;
+  border-color: orange;
+  color: white;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
 }
 
 #question {
@@ -28,6 +41,22 @@ button {
   margin-top: 50px;
 }
 
-#link-to {
-  color: grey;
+li {
+  list-style-type: none;
+}
+
+.que-detail {
+  margin-top: 50px;
+  height: 200px;
+  text-align: center;
+}
+
+.txt {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 24px;
+}
+
+#ans {
+  margin-top: 45px;
 }
