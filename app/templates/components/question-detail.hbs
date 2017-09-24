@@ -1,13 +1,18 @@
-{{question.author}} <br>
+<div class="container">
 
-{{question.question}}
+  {{question.author}} <br>
+
+  {{question.question}}
 
 
 
-<h3> ANSWERS</h3>
+      <h3> ANSWERS</h3>
 
-<ul>
-  {{#each rental.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each rental.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </ul>
+
+
+</div>

@@ -1,7 +1,15 @@
-<li>
+<div class="container">
 
-  {{answer.commentor}} <br>
 
-  {{answer.answer}}
+  <li>
 
-</li>
+    {{answer.commentor}} <br>
+
+    {{answer.answer}}
+
+  </li>
+
+  <button {{action 'delete' answer}}> Delete </button>
+
+
+</div>

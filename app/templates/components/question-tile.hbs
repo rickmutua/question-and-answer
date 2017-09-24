@@ -1,11 +1,17 @@
-<li>
+<div class="container" id="ques">
 
-{{#link-to 'question' question.id}}
+  <hr>
 
-    {{question.author}} <br>
+  <li>
 
-    {{question.question}}
+  {{#link-to 'question' question.id}}
 
-{{/link-to}}
+      Posted by {{question.author}} {{moment-from-now (now interval=1000)}} <br>
 
-</li>
+      {{question.question}}
+
+  {{/link-to}}
+
+  </li>
+
+</div>

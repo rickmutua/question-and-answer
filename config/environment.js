@@ -27,6 +27,14 @@ module.exports = function(environment) {
       messagingSenderId: "162438765493"
     },
 
+    moment: {
+      // Options:
+      // 'all' - all years, all timezones
+      // '2010-2020' - 2010-2020, all timezones
+      // 'none' - no data, just timezone API
+      includeTimezone: 'all'
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
