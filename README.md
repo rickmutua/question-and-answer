@@ -11,7 +11,7 @@ You will need the following things properly installed on your computer.
 * [Google Chrome](https://google.com/chrome/)
 
 ##Tech Used
-*Ember-cli*
+* Ember-cli
 
 ## Installation
 
@@ -33,4 +33,4 @@ You will need the following things properly installed on your computer.
 
 ### Licenses
 * This project is licenced under MIT
-*copyright Erick Mutua (c) 2017 
+* copyright Erick Mutua (c) 2017
