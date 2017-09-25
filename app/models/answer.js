@@ -4,6 +4,6 @@ export default DS.Model.extend({
 
   commentor: DS.attr(),
   answer: DS.attr(),
-  question: DS.belongsTo('question', {async: true})
+  question: DS.belongsTo('question', {async: true}),
 
 });
