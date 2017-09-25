@@ -9,7 +9,7 @@ export default Ember.Component.extend({
           author: this.get('author'),
           question: this.get('question'),
         };
-        this.sendAction('saveQuestion1', params);
+        this.sendAction('saveQuestion', params);
       }
     }
 });
