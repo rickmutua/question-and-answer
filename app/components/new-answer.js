@@ -13,7 +13,7 @@ export default Ember.Component.extend({
       saveAnswer() {
         var params = {
           commentor: this.get('commentor'),
-          answer: this.get('answer')
+          answer: this.get('answer'),
         }
         this.set('addNewAnswer', false);
         this.sendAction('saveAnswer', params);
