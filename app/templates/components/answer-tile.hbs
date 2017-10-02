@@ -1,15 +1,30 @@
-<div class="container" id="ans-tile" style="margin-top: 20px;">
+<div class="container" id="ans-til" style="margin-top: 20px;">
 
 
-  <li>
+  <div id="ans-tile">
 
-    Answered by {{answer.commentor}} <br>
+    <li>
 
-    {{answer.answer}}
+      Answered by {{#link-to 'user' user.id}} {{answer.commentor}} {{/link-to}} <br>
 
-  </li>
+    <div id="ans-ans">
 
-  <button {{action 'delete' answer}}> DELETE </button>
+      <button {{action 'upVote' answer}}> <span class="glyphicon glyphicon-chevron-up"></span> </button>
+        <p>
+          {{answer.upVotes}}
+        </p>
+
+        {{answer.answer}} <br>
+        
+      <button {{action 'upVote' answer}}> <span class="glyphicon glyphicon-chevron-down"></span> </button>
+
+    </div>
+
+    </li>
+
+    <button {{action 'delete' answer}}> DELETE </button>
+
+  </div>
 
 
 </div>

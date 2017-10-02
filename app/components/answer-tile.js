@@ -7,6 +7,17 @@ export default Ember.Component.extend({
       {
         this.sendAction('destroyAnswer', answer);
       }
-    }
+    },
+
+    upVote(answer) {
+      var question = this.get("currentQuestion");
+      this.sendAction('upVote', answer, question);
+    },
+
+    downVote(answer) {
+      var question = this.get("currentQuestion");
+      this.sendAction('downVote', answer, question);
+    },
+
   }
 });

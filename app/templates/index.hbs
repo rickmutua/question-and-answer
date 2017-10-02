@@ -1,26 +1,23 @@
 <div class="container">
 
 
-<div class="newQue">
+  <div class="newQue">
 
-  {{new-question saveQuestion="saveQuestion"}}
+    {{new-question saveQuestion="saveQuestion"}}
 
-</div>
-
-
-
-<h3> Trending Questions</h3>
-
-<ul>
-
-  {{#each model.questions as |question|}}
-    {{question-tile question=question}}
-  {{/each}}
-
-</ul>
+  </div>
 
 
 
+  <h3> Trending Questions</h3>
+
+  <ul>
+
+    {{#each model.questions as |question|}}
+      {{question-tile question=question}}
+    {{/each}}
+
+    </ul>
 
 
 </div>

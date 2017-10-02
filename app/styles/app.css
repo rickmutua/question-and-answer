@@ -67,3 +67,17 @@ button:hover {
 .user {
   float: right;
 }
+li {
+  list-style: none;
+}
+
+#ans-tile {
+  height: 200px;
+  font-size: 16px;
+  background-color: #888888;
+}
+
+#ans-ans {
+  padding: 20px;
+  font-size: 20px;
+}

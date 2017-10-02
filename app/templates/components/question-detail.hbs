@@ -22,8 +22,9 @@
 
       <h3 style="margin-top: 50px;"> ANSWERS: </h3>
 
+  <div id="ques-ans">
     <ul>
-      {{#each model.answers as |answer|}}
+      {{#each question.answers as |answer|}}
 
         {{answer-tile answer=answer}}
 
@@ -31,6 +32,7 @@
     </ul>
 
     {{new-answer saveAnswer="saveAnswer" question=model}}
+  </div>
 
 
 </div>

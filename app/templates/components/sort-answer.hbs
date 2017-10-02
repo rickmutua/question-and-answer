@@ -6,13 +6,13 @@
 
       {{#each sortedAnswers as |sortedAnswer|}}
 
-      
 
-        <button {{action 'upVote' answer}}> <a class="upvote"></a> </button>
+
+        <button {{action 'upVote' answer}}> <span class="glyphicon glyphicon-chevron-up"></span> </button>
           <p>
             votes: {{answer.upVotes}}
           </p>
-        <button {{action 'downVote' answer}}> <a class="downvote"></a> </button>
+        <button {{action 'downVote' answer}}> <span class="glyphicon glyphicon-chevron-down"></span> </button>
 
         <a class="star star-on"></a>
 
