@@ -62,6 +62,7 @@ button:hover {
   height: 50px;
   border-radius: 20px;
   float: right;
+  margin-right: 10px;
 }
 
 .user {
@@ -80,4 +81,8 @@ li {
 #ans-ans {
   padding: 20px;
   font-size: 20px;
+}
+
+#voting {
+  float: right;
 }

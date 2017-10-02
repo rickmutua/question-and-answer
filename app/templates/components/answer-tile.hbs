@@ -9,16 +9,27 @@
 
     <div id="ans-ans">
 
-      <button {{action 'upVote' answer}}> <span class="glyphicon glyphicon-chevron-up"></span> </button>
+
+      <button {{action 'upVote' answer}} id="voting"> <span class="glyphicon glyphicon-chevron-up"></span> </button> <br>
+      <p>
+        {{answer.upVotes}}
+      </p>
+      <button {{action 'upVote' answer}} id="voting"> <span class="glyphicon glyphicon-chevron-down"></span> </button>
+
+      <div class="user">
+        <img src="http://media.istockphoto.com/photos/male-silhouette-profile-picture-with-question-mark-picture-id518552551?s=170x170" alt="{{question.author}}" id="userProfile"> <br>
+        {{answer.commentor}}
+      </div>
+
+
         <p>
-          {{answer.upVotes}}
+          {{answer.answer}}
         </p>
 
-        {{answer.answer}} <br>
-        
-      <button {{action 'upVote' answer}}> <span class="glyphicon glyphicon-chevron-down"></span> </button>
+
 
     </div>
+
 
     </li>
 
