@@ -1,11 +1,13 @@
 <div class="container">
 
 
-    {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
-
     {{update-question question=model update="update"}}
 
+    {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+
     {{new-answer saveAnswer="saveAnswer" question=model}}
+
+    {{sort-answer currentQuestion = model.answers deleteAnswer="deleteAnswer" upVote="upVote" downVote="downVote"}}
 
 
 </div>

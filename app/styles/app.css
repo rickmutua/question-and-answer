@@ -1,7 +1,3 @@
-h1 {
-  text-align: center;
-}
-
 .newQue {
   margin-top: 40px;
   text-align: center;
@@ -13,6 +9,7 @@ input {
 
 textarea {
   border-radius: 5px;
+  width: 400px;
 }
 
 button {
@@ -32,6 +29,12 @@ button:hover {
   width: 500px;
 }
 
+.que-detail {
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+}
+
 .row {
   margin-top: 40px;
 }
@@ -39,24 +42,28 @@ button:hover {
 #home {
   text-align: center;
   margin-top: 50px;
-}
-
-li {
-  list-style-type: none;
-}
-
-.que-detail {
-  margin-top: 50px;
-  height: 200px;
-  text-align: center;
+  font-size: 18px;
 }
 
 .txt {
-  text-align: center;
-  padding-top: 60px;
   font-size: 24px;
 }
 
 #ans {
   margin-top: 45px;
+}
+
+#del {
+  margin-top: 30px;
+}
+
+#userProfile {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  float: right;
+}
+
+.user {
+  float: right;
 }

@@ -1,31 +1,36 @@
 <div class="container">
 
-<div class="que-detail" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rFU0t0ppwwdVdZQu9mcEaXMwC93SKLo1gc6uqFfvOpISTEE6'); color: white;">
+  <div class="que-detail" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rFU0t0ppwwdVdZQu9mcEaXMwC93SKLo1gc6uqFfvOpISTEE6'); color: white;">
 
-  <div class="txt">
-    {{question.question}}
+    <div class="txt">
+      {{question.question}}
+    </div>
+
+
+    <div class="user">
+      <img src="http://media.istockphoto.com/photos/male-silhouette-profile-picture-with-question-mark-picture-id518552551?s=170x170" alt="{{question.author}}" id="userProfile"> <br>
+      {{question.author}}
+    </div>
+
+    <br>
+
+    <button id="del" {{action 'delete' question}}> DELETE </button>
+
   </div>
 
-  <button id="del" {{action 'delete' question}}> DELETE </button>
-
-  <button id="ans" {{action 'answerFormShow'}}> ANSWER </button>
 
 
+      <h3 style="margin-top: 50px;"> ANSWERS: </h3>
 
-</div>
+    <ul>
+      {{#each model.answers as |answer|}}
 
+        {{answer-tile answer=answer}}
 
+      {{/each}}
+    </ul>
 
-
-
-
-      <h3> ANSWERS</h3>
-
-  <ul>
-    {{#each question.answers as |answer|}}
-      {{answer-tile answer=answer}}
-    {{/each}}
-  </ul>
+    {{new-answer saveAnswer="saveAnswer" question=model}}
 
 
 </div>

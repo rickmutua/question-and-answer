@@ -1,37 +1,41 @@
-<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
 
+    <div class="navbar-header">
 
-  <h1> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_CUWBZf31COd9NVO4dUoq3kgvdpqf6hUrU6QFdki4hJHtYkX" alt=""> AIRLOCK </h1>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#main-nav-bar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
 
-    <div class="row">
+      </button>
 
-      <div class="col-md-2">
-        {{#link-to 'index'}} QUESTIONS {{/link-to}}
-      </div>
-
-      <div class="col-md-2">
-        <a href="#"> CATEGORIES </a>
-      </div>
-
-      <div class="col-md-2">
-        <a href="#"> BLOG </a>
-      </div>
-
-      <div class="col-md-2">
-        <a href="#"> PROFILE </a>
-      </div>
-
-      <div class="col-md-2">
-        <a href="#"> LOGIN </a>
-      </div>
-
-      <div class="col-md-2">
-        <a href="#"> REGISTER </a>
-      </div>
+      {{#link-to 'index' class="navbar-brand"}} AIRLOCK {{/link-to}}
 
     </div>
 
-</div>
+    <div class="container" id="nav-btns">
+
+    <div class="collapse navbar-collapse" id="main-nav-bar">
+
+      <ul class="nav navbar-nav">
+        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}QUESTIONS{{/nav-link-to}}
+        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}CATEGORIES{{/nav-link-to}}
+        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}BLOG{{/nav-link-to}}
+        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}PROFILE{{/nav-link-to}}
+        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}LOGIN{{/nav-link-to}}
+        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}REGISTER{{/nav-link-to}}
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+    </div>
+
+  </div><!-- /.container-fluid -->
+
+</nav>
 
 
 {{outlet}}

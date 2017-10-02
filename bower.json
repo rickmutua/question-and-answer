@@ -6,7 +6,7 @@
     "Erick <rick.mutua12@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/rickmutua/question-and-answer",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
+    "bootstrap": "~3.3",
     "firebase": "^4.4.0",
     "package": "^0.1.2"
   }

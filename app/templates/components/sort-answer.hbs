@@ -1,0 +1,35 @@
+<div class="container">
+
+  {{#if rated}}
+
+    <button {{action "toggleSort"}}> SHOW </button>
+
+      {{#each sortedAnswers as |sortedAnswer|}}
+
+      
+
+        <button {{action 'upVote' answer}}> <a class="upvote"></a> </button>
+          <p>
+            votes: {{answer.upVotes}}
+          </p>
+        <button {{action 'downVote' answer}}> <a class="downvote"></a> </button>
+
+        <a class="star star-on"></a>
+
+        <p>
+          Answered by {{answer.commentor}} <br>
+          {{answer.answer}}
+        </p>
+
+        <button {{action 'deleteAnswer' answer}}> Delete Answer </button>
+
+        {{else}}
+          <p>Not Answered Yet</p>
+
+
+
+      {{/each}}
+
+    {{/if}}
+
+</div>
