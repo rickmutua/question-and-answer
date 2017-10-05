@@ -1,4 +1,4 @@
-import Ember from 'ember';
+//*import Ember from 'ember';
 
 export default Ember.Component.extend({
   rated: true,
@@ -9,7 +9,7 @@ export default Ember.Component.extend({
   }),
 
   actions: {
-    
+
     toggleSort() {
       if(this.get("rated"))
       {

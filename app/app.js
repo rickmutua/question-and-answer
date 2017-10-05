@@ -11,4 +11,8 @@ const App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+// Ember.Handlebars.registerHelper('formatDate',function(date) {
+//       return moment(date).fromNow();
+//   });
+
 export default App;

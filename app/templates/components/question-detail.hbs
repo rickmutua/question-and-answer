@@ -22,6 +22,8 @@
 
       <h3 style="margin-top: 50px;"> ANSWERS: </h3>
 
+      <button {{action "toggleSort"}}> SHOW </button>
+
   <div id="ques-ans">
     <ul>
       {{#each question.answers as |answer|}}
@@ -29,7 +31,9 @@
         {{answer-tile answer=answer}}
 
       {{/each}}
+
     </ul>
+
 
     {{new-answer saveAnswer="saveAnswer" question=model}}
   </div>

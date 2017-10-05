@@ -11,9 +11,9 @@
 
 
       <button {{action 'upVote' answer}} id="voting"> <span class="glyphicon glyphicon-chevron-up"></span> </button> <br>
-      <p>
-        {{answer.upVotes}}
-      </p>
+        <p id="voting">
+          votes: {{answer.upVotes}}
+        </p>
       <button {{action 'upVote' answer}} id="voting"> <span class="glyphicon glyphicon-chevron-down"></span> </button>
 
       <div class="user">
@@ -22,9 +22,9 @@
       </div>
 
 
-        <p>
-          {{answer.answer}}
-        </p>
+
+
+        {{answer.answer}} <br>
 
 
 

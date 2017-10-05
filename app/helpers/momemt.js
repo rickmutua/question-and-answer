@@ -1,7 +1,6 @@
 import Ember from 'ember';
+import moment from 'moment';
 
-export function momemt(params/*, hash*/) {
-  computedFromNow: fromNow(momentComputed('12-25-1995', 'MM-DD-YYYY'), false)
-}
-
-export default Ember.Helper.helper(momemt);
+export default Ember.Helper.helper('formatDate',function(date) {
+      return moment(date).fromNow();
+  });;
